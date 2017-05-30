@@ -6,8 +6,8 @@
       class={{concat css '-button'}}
       data-test={{hook (concat hookPrefix '-button')}}
       {{action (action onDispatch subcontentAction.action) on='click'}}
-    >
-      <span class={{concat css '-label'}}> {{subcontentAction.label}} </span>      
+      data-tooltip={{subcontentAction.label}}
+    >  
       {{frost-icon
         hook=(concat hookPrefix '-buttonIcon')
         icon=subcontentAction.icon.name
@@ -19,8 +19,8 @@
       class={{concat css '-button'}}
       data-test={{hook (concat hookPrefix '-button')}}
       {{action (action subcontentAction.action) on='click'}}
-    >
-      <span class={{concat css '-label'}}> {{subcontentAction.label}} </span>      
+      data-tooltip={{subcontentAction.label}}
+    >   
       
       {{frost-icon
         hook=(concat hookPrefix '-buttonIcon')
